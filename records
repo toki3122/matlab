@@ -1,0 +1,11 @@
+diary off
+d=7;
+e=6;
+f=d+e;
+f
+
+f =
+
+    13
+
+diary off
