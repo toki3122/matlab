@@ -1,0 +1,278 @@
+>> iskeyword('while')
+
+ans =
+
+  logical
+
+   1
+
+>> iskeyword('do')
+
+ans =
+
+  logical
+
+   0
+
+>> iskeyword('var')
+
+ans =
+
+  logical
+
+   0
+
+>> a=5;
+>> exist('a')%checks if the variable_name is already used
+
+ans =
+
+     1
+
+>> exist a
+
+ans =
+
+     1
+
+>> 1/0
+
+ans =
+
+   Inf
+
+>> pi
+
+ans =
+
+    3.1416
+
+>> i
+
+ans =
+
+   0.0000 + 1.0000i
+
+>> 0/0
+
+ans =
+
+   NaN
+
+>> ans
+
+ans =
+
+   NaN
+
+>> %everything is matrix ._________.
+>> a=2:
+ a=2:
+     ↑
+Error: Invalid expression. Check for missing or extra characters.
+ 
+>> a=2;
+>> b=[1,2];%1x2 matrix
+>> b
+
+b =
+
+     1     2
+
+>> %just space can be used too
+>> b=[1 2];
+>> b
+
+b =
+
+     1     2
+
+>> c=[1;2] %2x1 matrix
+
+c =
+
+     1
+     2
+
+>> d=[1 2 3;4 5 6;7 8 9];
+>> d
+
+d =
+
+     1     2     3
+     4     5     6
+     7     8     9
+
+>> a=5;%this is considered as a scalar
+>> %the vectors are of two kinds, row and column
+>> b=[1 2 3]%row
+
+b =
+
+     1     2     3
+
+>> c=[1;2;3]%column
+
+c =
+
+     1
+     2
+     3
+
+>> a=[1 2 3];
+>> a+b
+
+ans =
+
+     2     4     6
+
+>> a-b
+
+ans =
+
+     0     0     0
+
+>> a*b%not possible
+Error using  * 
+Incorrect dimensions for matrix multiplication. Check that the number of columns in the first matrix matches
+the number of rows in the second matrix. To perform elementwise multiplication, use '.*'.
+
+Related documentation
+ 
+>> a*c
+
+ans =
+
+    14
+
+>> 4/2 %right division
+
+ans =
+
+     2
+
+>> 4\2
+
+ans =
+
+    0.5000
+
+>> %right division
+>> a
+
+a =
+
+     1     2     3
+
+>> b
+
+b =
+
+     1     2     3
+
+>> a.*b %element by element operation(a11*b11 a12*b12 a13*b13)
+
+ans =
+
+     1     4     9
+
+>> a=4;
+>> b=5;
+>> a==b
+
+ans =
+
+  logical
+
+   0
+
+>> a>b
+
+ans =
+
+  logical
+
+   0
+
+>> a<b
+
+ans =
+
+  logical
+
+   1
+
+>> log(2)
+
+ans =
+
+    0.6931
+
+>> log10(2)
+
+ans =
+
+    0.3010
+
+>> %sin cos works on radian
+>> sin(pi/4)
+
+ans =
+
+    0.7071
+
+>> sin(pi/6)
+
+ans =
+
+    0.5000
+
+>> %for arcsin
+>> asin(.5)
+
+ans =
+
+    0.5236
+
+>> %which is in radian
+>> ans*(180/pi)
+
+ans =
+
+   30.0000
+
+>> %which is in degree
+>> round(3.6)
+
+ans =
+
+     4
+
+>> round(3.4)
+
+ans =
+
+     3
+
+>> fix(3.6)
+
+ans =
+
+     3
+
+>> ceil(3.2)
+
+ans =
+
+     4
+
+>> floor(3.2)
+
+ans =
+
+     3
+
+Error using uiimport (line 80)
+Cannot open the Import Wizard on a file while the Import Wizard is open.
+ 
+>> 
